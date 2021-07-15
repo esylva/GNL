@@ -6,7 +6,7 @@
 /*   By: esylva <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/08 16:28:08 by esylva            #+#    #+#             */
-/*   Updated: 2021/07/13 23:04:43 by esylva           ###   ########.fr       */
+/*   Updated: 2021/07/15 08:25:27 by esylva           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,10 @@ char 	*ft_checking_ostatok(char *ostatok, char **line)
 		}
 	}
 	else
+	{
+		ostatok = ft_clean_buf(ostatok);
 		*line = NULL;
+	}
 	return (ostatok);
 }
 
